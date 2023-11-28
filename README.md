@@ -1,6 +1,6 @@
-# Alumnia
+# CdL
 
-Bem-vindo ao **Alumnia**! Este é um sistema para gerenciar alunos.
+Bem-vindo ao **CdL**! Este é um sistema para gerenciar alunos.
 
 ## Instruções de Uso
 
@@ -31,4 +31,4 @@ O parâmetro -o abrirá automaticamente o navegador padrão com o aplicativo em 
 
 Agora, você pode acessar o sistema em http://localhost:4200/ no seu navegador.
 
-Divirta-se explorando Alumnia!
+Divirta-se explorando CdL!
