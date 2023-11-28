@@ -1,0 +1,40 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Lista de Alunos</h2>
+  </header>
+  <ng-template #semAluno>
+    <div class="ff-inter sem-alunos">
+      <p>Ainda não há alunos cadastrados!</p>
+    </div>
+  </ng-template>
+  <div class="mural" *ngIf="listaAlunos && listaAlunos.length > 0; else semAluno">
+    <table class="lista">
+      <thead class="topo">
+          <td>Matricula</td>
+          <td>Nome</td>
+          <td>Email</td>
+          <td>Gênero</td>
+          <td>Editar</td>
+          <td>Excluir</td>
+      </thead>
+      <tbody class="alunos-lista">
+          <tr *ngFor="let aluno of listaAlunos">
+              <td>{{aluno.id}}</td>
+              <td>{{aluno.nome}}</td>
+              <td>{{aluno.email}}</td>
+              <td><img src="/assets/imagens/{{ aluno.modelo }}.png" alt="Aspas coloridas"></td>
+              <td><button class="botao-editar">
+                <img src="/assets/imagens/icone-editar.png" routerLink="/pensamentos/editarAluno/{{aluno.id}}" alt="Ícone de editar">
+              </button></td>
+              <td><button class="botao-excluir" routerLink="/pensamentos/excluirAluno/{{aluno.id}}">
+                <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+              </button></td>
+          </tr>
+      </tbody> 
+    </table>
+  </div>
+      
+</section>
+<!-- botão que add alunos  -->
+<div style="display: flex; justify-content: center;"><button style="margin: 10px;" routerLink="/criarAluno" class="botao">Adicionar aluno</button></div>
+

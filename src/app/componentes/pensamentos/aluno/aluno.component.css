@@ -1,0 +1,65 @@
+.acoes {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao-excluir {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.botao-editar {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.aluno {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.aluno .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.aluno .autoria {
+  word-wrap: break-word;
+}
+
+.modelo1 {
+  box-shadow: 8px 8px 0px #154580;
+}
+
+.modelo2 {
+  box-shadow: 8px 8px 0px #6BD1FF;
+}
+
+.modelo3 {
+  box-shadow: 8px 8px 0px #84EEC1;
+}
+
+.aluno-g {
+  width: 556px;
+}
+
+.aluno-p {
+  width: 262px;
+}
+
+@media screen and (max-width: 768px) {
+  .aluno-g {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .aluno-p {
+    width: 100%;
+  }
+}

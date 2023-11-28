@@ -1,0 +1,91 @@
+<section class="container editar-alunos ff-inter">
+  <header class="header">
+    <h2>Adicione um <br>aluno novo:</h2>
+  </header>
+  <form>
+    <div class="form-group">
+      <label for="aluno">Email:</label>
+      <input
+        type="email"
+        id="autoria"
+        name="autoria"
+        class="input"
+        placeholder="Digite o email"
+        [(ngModel)]="aluno.email"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="autoria">Nome:</label>
+      <input
+        type="text"
+        id="aluno"
+        name="aluno"
+        class="input"
+        placeholder="Digite o nome do aluno"
+        [(ngModel)]="aluno.nome"
+      >
+    </div>
+
+    <label for="modelo">Selecione seu gênero:</label>
+    <div style="display: flex; justify-content: center;" class="form-group">
+      <div class="container-radio">
+        <div class="radio-modelo">
+          <label for="modelo1">
+            <input
+              type="radio"
+              id="modelo1"
+              value="modelo1"
+              name="modelo-card"
+              [(ngModel)]="aluno.modelo"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Maculino</span>
+          </label>
+          
+        </div>
+
+        <div class="radio-modelo">
+          <label for="modelo2">
+            <input
+              type="radio"
+              id="modelo2"
+              value="modelo2"
+              name="modelo-card"
+              [(ngModel)]="aluno.modelo"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Feminino</span>
+          </label>
+          
+        </div>
+
+        <div class="radio-modelo">
+          <label for="modelo3">
+            <input
+              type="radio"
+              id="modelo3"
+              value="modelo3"
+              name="modelo-card"
+              [(ngModel)]="aluno.modelo"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Outro</span>
+          </label>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button (click)="editarAluno()" class="botao">Salvar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
+    </div>
+  </form>
+</section>

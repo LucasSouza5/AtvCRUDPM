@@ -1,0 +1,77 @@
+<section class="container criar-alunos ff-inter">
+  <header class="header">
+    <h2>ADICIONE UM NOVO ALUNO:</h2>
+  </header>
+  <form>
+    <label for="aluno">Aluno</label>
+    <input
+      type="textarea"
+      class="input"
+      id="aluno"
+      name="aluno"
+      placeholder="Digite o nome do aluno"
+      [(ngModel)]="aluno.nome"
+    >
+    <label for="autoria">Email</label>
+    <input
+      type="text"
+      class="input"
+      id="autoria"
+      name="autoria"
+      placeholder="Digite o email"
+      [(ngModel)]="aluno.email"
+    >
+    <label for="modelo">Selecione seu genero:</label>
+    <div class="container-radio">
+      <div class="radio-modelo">
+        <label for="modelo1">
+          <input
+            type="radio"
+            id="modelo1"
+            value="modelo1"
+            name="modelo-card"
+            [(ngModel)]="aluno.modelo"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Masculino</span>
+        </label>
+      </div>
+      <div class="radio-modelo">
+        <label for="modelo2">
+          <input
+            type="radio"
+            id="modelo2"
+            value="modelo2"
+            name="modelo-card"
+            [(ngModel)]="aluno.modelo"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Feminino</span>
+        </label>
+      </div>
+      <div class="radio-modelo">
+        <label for="modelo3">
+          <input
+            type="radio"
+            id="modelo3"
+            value="modelo3"
+            name="modelo-card"
+            [(ngModel)]="aluno.modelo"
+          >
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Outro</span>
+        </label>
+      </div>
+    </div>
+    <div class="acoes">
+      <button routerLink="/criarAluno" (click)="criarAluno()" class="botao">Salvar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
+    </div>
+  </form>
+</section>

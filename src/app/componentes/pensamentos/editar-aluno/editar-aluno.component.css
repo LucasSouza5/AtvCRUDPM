@@ -1,0 +1,105 @@
+.acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  margin: 5px;
+}
+
+.editar-alunos {
+  padding: 2rem 0;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  padding: 10px;
+}
+
+.editar-alunos form {
+  background: #f2eded;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.editar-alunos form label {
+  color: black;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.editar-alunos form .input {
+  border: none;
+  height: 20px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 0.5rem 0 2rem;
+}
+
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+
+.modelo .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.modelo .autoria {
+  word-wrap: break-word;
+}
+
+.radio {
+  margin: 0;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-modelo label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: black;
+}
+
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: black;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: black;
+}
